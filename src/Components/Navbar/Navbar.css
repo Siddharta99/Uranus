@@ -1,0 +1,148 @@
+.navbar-container {
+    width: 100vw;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(40, 40, 40);
+    position: fixed;
+    background-color: rgb(50, 50, 120);
+    z-index: 100;
+    margin-top: -10px;
+  }
+  
+  .navbar-info {
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 1rem;
+  }
+  
+  .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.2rem;
+  }
+  
+  .logo img {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin-right: 1rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(200, 200, 200);
+    opacity: 0.9;
+    font-size: 1.2rem;
+  }
+  
+  .routes {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    padding: 1rem;
+    margin-left: 4rem;
+  }
+  .route {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  a:hover,
+  a:active {
+    opacity: 1;
+    text-decoration: underline;
+    color: rgb(0, 82, 204);
+  }
+  
+  .navbar-user {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+  
+  .signup button {
+    background-color: rgb(0, 82, 204);
+    border: none;
+    color: white;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0.7rem;
+  }
+  .hamburger-icon {
+    display: none;
+  }
+  
+  .login button {
+    border: 1px solid rgb(0, 82, 204);
+    color: rgb(0, 82, 204);
+    border-radius: 10px;
+    margin-left: 1rem;
+    margin-right: 3rem;
+    padding: 0.7rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: transparent;
+  }
+  
+  @media (max-width: 700px) {
+    .routes {
+      display: none;
+    }
+    .navbar-user {
+      display: none;
+    }
+    .hamburger-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      margin-right: 1rem;
+    }
+    .hamburger-icon:hover,
+    .hamburger-icon:active {
+      background-color: rgb(0, 0, 60);
+      border-radius: 50%;
+    }
+  }
+  
+  .routes-container-icon {
+    display: flex;
+    width: 120px;
+    flex-direction: column;
+    padding: 0.5rem;
+  
+    border-radius: 10px;
+    background-color: rgb(0, 0, 60);
+    position: relative;
+    top: 100px;
+    margin-left: auto;
+    position: fixed;
+    left: 60vw;
+  
+    margin-right: 20px;
+    z-index: 100;
+  }
+  
+  .route-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+  }
+  
+  .route-icon:hover {
+    background-color: rgb(0, 0, 70);
+  }
